@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 /**
  * An object that can parse Prometheus found in a specific data format in an input stream.
- * The type <T> is the metric family object for the specific data format.
+ * The type T is the metric family object for the specific data format.
  * It is the job of the associated {@link PrometheusMetricsProcessor} to process
  * the parsed data.
  *

@@ -63,7 +63,7 @@ public class PrometheusScraper {
      * This is useful if you are providing a URL that actually refers to a file in which case
      * the URL connection will not be able to provide a content type.
      *
-     * @see #PrometheusScraperUrl(File, PrometheusDataFormat)
+     * @see #PrometheusScraper(File, PrometheusDataFormat)
      *
      * @param url the URL where the Prometheus metric data is found
      * @param dataFormat the data format of the metric data found at the URL, or null if
@@ -182,7 +182,7 @@ public class PrometheusScraper {
      *
      * The default implementation is to simply open an unsecured connection to the URL.
      *
-     * @param url the Prometheus endpoint
+     * @param endpointUrl the Prometheus endpoint
      * @return connection details for the Prometheus endpoint
      *
      * @throws IOException if the connection could not be opened
